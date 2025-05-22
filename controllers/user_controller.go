@@ -23,9 +23,15 @@ func (uc *UserController) GetProfile(c *fiber.Ctx) error {
 		return models.Error(c, fiber.StatusNotFound, "User not found")
 	}
 
+	var rentals []models.Rental
+	if err := uc.DB.Where("user_id = ?", userID).Find(&rentals).Error; err != nil {
+		return models.Error(c, fiber.StatusInternalServerError, "Could not fetch rentals")
+	}
+
 	return models.Success(c, "success", fiber.Map{
-		"id":    user.ID,
-		"name":  user.Name,
-		"email": user.Email,
+		"id":          user.ID,
+		"name":        user.Name,
+		"email":       user.Email,
+		"total_trips": len(rentals),
 	})
 }
