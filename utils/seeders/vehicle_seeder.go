@@ -34,7 +34,7 @@ func VehicleSeeder(db *gorm.DB) error {
 		{
 			Name:          "Honda Civic",
 			Type:          "car",
-			Status:        "nonavailable",
+			Status:        "unavailable",
 			ImageURL:      "https://automobiles.honda.com/-/media/Honda-Automobiles/Vehicles/2025/civic-sedan/non-VLP/10-Family/MY25_Civic_Family_Card_Jelly_Hybrid_2x.jpg?sc_lang=en",
 			BatteryLevel:  rand.Intn(50) + 50,
 			Latitude:      23.7731,
@@ -64,7 +64,7 @@ func VehicleSeeder(db *gorm.DB) error {
 		{
 			Name:          "Hyundai Elantra",
 			Type:          "car",
-			Status:        "nonavailable",
+			Status:        "unavailable",
 			ImageURL:      "https://di-uploads-pod9.dealerinspire.com/lynneshyundai/uploads/2024/10/2025-Hyundai-Elantra.png",
 			BatteryLevel:  rand.Intn(50) + 50,
 			Latitude:      23.7742,
@@ -84,7 +84,7 @@ func VehicleSeeder(db *gorm.DB) error {
 		{
 			Name:          "Toyota Premio",
 			Type:          "car",
-			Status:        "nonavailable",
+			Status:        "unavailable",
 			ImageURL:      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg7IPaY6Ablr5Erw1mx9Of1RdhC3majtUP3A&s",
 			BatteryLevel:  rand.Intn(50) + 50,
 			Latitude:      23.7801,
@@ -104,7 +104,7 @@ func VehicleSeeder(db *gorm.DB) error {
 		{
 			Name:          "BMW 3 Series",
 			Type:          "car",
-			Status:        "nonavailable",
+			Status:        "unavailable",
 			ImageURL:      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTuTHAvOZhe9ytOzVfOF5WI8dArFXlGEfDLA&s",
 			BatteryLevel:  rand.Intn(50) + 50,
 			Latitude:      23.7639,
@@ -124,7 +124,7 @@ func VehicleSeeder(db *gorm.DB) error {
 		{
 			Name:          "Ford Mustang",
 			Type:          "car",
-			Status:        "nonavailable",
+			Status:        "unavailable",
 			ImageURL:      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWB1YNdqEj9jTTGOwuHFpY8GUCZHcvnq1RgA&s",
 			BatteryLevel:  rand.Intn(50) + 50,
 			Latitude:      23.7682,
@@ -154,7 +154,7 @@ func VehicleSeeder(db *gorm.DB) error {
 		{
 			Name:          "Chevrolet Cruze",
 			Type:          "car",
-			Status:        "nonavailable",
+			Status:        "unavailable",
 			ImageURL:      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdsWjpUNPcKZ7ipemeV8XVyQrVezzpyElTVw&s",
 			BatteryLevel:  rand.Intn(50) + 50,
 			Latitude:      23.7555,
@@ -174,7 +174,7 @@ func VehicleSeeder(db *gorm.DB) error {
 		{
 			Name:          "Volkswagen Passat",
 			Type:          "car",
-			Status:        "nonavailable",
+			Status:        "unavailable",
 			ImageURL:      "https://imgd.aeplcdn.com/664x374/cw/ec/22548/Volkswagen-Passat-Headlamps-135233.jpg?wm=0&q=80",
 			BatteryLevel:  rand.Intn(50) + 50,
 			Latitude:      23.7689,
